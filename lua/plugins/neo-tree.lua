@@ -19,17 +19,24 @@ return{
 							},
 						},
 					}
-				}
-			})
-			source_selector = {
-				winbar = false,
-				statusline = false
+				},
+			filesystem ={
+				filtered_items = {
+					visible = true,
+					hide_dotfiles = false,
+					hide_gitignored = true,
+				},
 			}
-			vim.api.nvim_create_autocmd("VimEnter", {
-				command = "set nornu nonu | Neotree toggle",
-			})
-			vim.api.nvim_create_autocmd("BufEnter", {
-				command = "set rnu nu",
-			})
-	end
- }
+		})
+	source_selector = {
+		winbar = false,
+		statusline = false
+	}
+	vim.api.nvim_create_autocmd("VimEnter", {
+		command = "set nornu nonu | Neotree toggle",
+	})
+	vim.api.nvim_create_autocmd("BufEnter", {
+		command = "set rnu nu",
+	})
+end
+}
