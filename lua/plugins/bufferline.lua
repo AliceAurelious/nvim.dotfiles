@@ -12,7 +12,7 @@ return{
 			},
 			seperator_style = "padded_slant",
 		}
-	end,	
+	end,
 	opts = function()
 		local Offset = require("bufferline.offset")
 		if not Offset.edgy then
