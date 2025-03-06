@@ -61,6 +61,6 @@ return{
 			-- any other neo-tree windows
 			"neo-tree",
 		},
-		open_files_do_not_replace_types = { "terminal", "Trouble", "qf", "edgy" },
+		open_files_do_not_replace_types = { "terminal", "Trouble", "qf", "edgy", "Toggleterm" },
 	},
 }
